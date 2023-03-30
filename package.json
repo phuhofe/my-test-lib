@@ -1,0 +1,24 @@
+{
+  "name": "dcmp",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {},
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "@nrwl/esbuild": "15.8.9",
+    "@nrwl/eslint-plugin-nx": "15.8.9",
+    "@nrwl/js": "15.8.9",
+    "@nrwl/linter": "15.8.9",
+    "@nrwl/workspace": "15.8.9",
+    "@types/node": "18.7.1",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "esbuild": "^0.17.5",
+    "eslint": "~8.15.0",
+    "eslint-config-prettier": "8.1.0",
+    "nx": "15.8.9",
+    "prettier": "^2.6.2",
+    "typescript": "~4.9.5"
+  }
+}

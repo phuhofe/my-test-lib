@@ -1,0 +1,27 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@dcmp/dcmp": ["packages/dcmp/src/index.ts"],
+      "@dcmp/is-even": ["packages/is-even/src/index.ts"],
+      "@dcmp/is-even-test": ["packages/is-even-test/src/index.ts"],
+      "@dcmp/is-odd": ["packages/is-odd/src/index.ts"],
+      "@dcmp/test": ["packages/test/src/index.ts"],
+      "@dcmp/test-2": ["packages/test-2/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

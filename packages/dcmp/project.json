@@ -1,0 +1,26 @@
+{
+  "name": "dcmp",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/dcmp/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/esbuild:esbuild",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/dcmp",
+        "main": "packages/dcmp/src/index.ts",
+        "tsConfig": "packages/dcmp/tsconfig.lib.json",
+        "assets": ["packages/dcmp/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/dcmp/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}

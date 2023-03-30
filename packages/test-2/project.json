@@ -1,0 +1,26 @@
+{
+  "name": "test-2",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/test-2/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/test-2",
+        "main": "packages/test-2/src/index.ts",
+        "tsConfig": "packages/test-2/tsconfig.lib.json",
+        "assets": ["packages/test-2/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/test-2/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}
